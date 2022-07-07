@@ -1,0 +1,20 @@
+doctype html
+html(lang="ja")
+  head
+    title="rolling"
+    link(rel="stylesheet", href="index.css")
+    script(type='text/javascript').
+      console.log("hello")
+  body
+    .container
+      - for (i = 1; i <= 3; i++)
+        div(class=`block-${i}`)
+          if i===1
+            - for (j = i+0; j < i+0+3; j++)
+              div(class=`box-${j}`)
+          if i===2
+            - for (j = i+2; j < i+2+3; j++)
+              div(class=`box-${j}`)
+          if i===3
+            - for (j = i+4; j < i+4+3; j++)
+              div(class=`box-${j}`)

@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1vh solid orange;
+}
+
+[class^='block-'] {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 30vh;
+}
+@media screen and (max-width: 480px) {
+  [class^='block-'] {
+    flex-direction: column;
+    height: 50vh;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  [class^='block-'] {
+    flex-direction: column;
+    height: 50vh;
+  }
+}
+
+[class^='box-'] {
+  display: flex;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.box-1 {
+  background: linear-gradient(
+    45deg,
+    #e24915,
+    #e7b613
+  );
+  flex-basis: 100%;
+}
+
+.box-2 {
+  background: linear-gradient(
+    45deg,
+    #4f5357,
+    #456234
+  );
+  flex-basis: 70%;
+}
+
+.box-3 {
+  background: linear-gradient(
+    45deg,
+    #dda077,
+    #6bb5cc
+  );
+  flex-basis: 30%;
+}
+
+.box-4 {
+  background: linear-gradient(
+    45deg,
+    #123456,
+    #456234
+  );
+  flex-basis: 20%;
+}
+
+.box-5 {
+  background: linear-gradient(
+    45deg,
+    #261256,
+    #345b62
+  );
+  flex-basis: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  .block-1 {
+    order: 2;
+  }
+
+  .block-2 {
+    order: 3;
+  }
+
+  .block-3 {
+    flex-direction: row;
+    order: 1;
+  }
+
+  .box-4,
+  .box-5 {
+    flex-basis: 50% !important;
+    order: 4;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .block-1 {
+    order: 2;
+  }
+
+  .block-2 {
+    order: 3;
+  }
+
+  .block-3 {
+    flex-direction: row;
+    order: 1;
+  }
+
+  .box-4,
+  .box-5 {
+    flex-basis: 50% !important;
+    order: 4;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

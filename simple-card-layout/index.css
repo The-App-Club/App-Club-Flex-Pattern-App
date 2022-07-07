@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  padding: 4vh;
+  border: 1vh solid orange;
+}
+
+[class^='block-'] {
+  display: flex;
+  flex-direction: row;
+  height: 27.3333333333vh;
+  gap: 4vh;
+}
+@media screen and (max-width: 480px) {
+  [class^='block-'] {
+    flex-direction: column;
+    height: 50vh;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  [class^='block-'] {
+    flex-direction: column;
+    height: 50vh;
+  }
+}
+
+[class^='box-'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33.3333333333%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #c1c1c1;
+}
+
+/*# sourceMappingURL=index.css.map */
